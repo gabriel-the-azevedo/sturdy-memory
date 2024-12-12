@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "To-do app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "test"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
