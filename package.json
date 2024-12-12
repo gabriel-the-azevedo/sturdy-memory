@@ -1,0 +1,19 @@
+{
+  "name": "sturdy-memory",
+  "version": "1.0.0",
+  "description": "To-do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-the-azevedo/sturdy-memory.git"
+  },
+  "author": "Gabriel de Azevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel-the-azevedo/sturdy-memory/issues"
+  },
+  "homepage": "https://github.com/gabriel-the-azevedo/sturdy-memory#readme"
+}
