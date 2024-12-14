@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/gabriel-the-azevedo/sturdy-memory#readme",
   "dependencies": {
-    "express": "^4.21.2",
-    "htmx": "^0.0.2"
+    "express": "^4.21.2"
   }
 }
