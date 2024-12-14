@@ -1,13 +1,26 @@
 <html>
+
 <head>
     <title>HTMX</title>
-    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.4"
+        integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
+
 <body>
-    <h1>HTMX Test</h1>
+    <main class="container" style="max-width: 950px;">
+        <article>
+            <h1>To-Do</h1>
+            <form hx-post="/add-item" hx-target="ul" hx-swap="beforeend">
+                <fieldset role="group">
+                    <input name="item">
+                    <input type="submit" value="Add Item">
+                </fieldset>
+            </form>
+            <ul></ul>
+        </article>
+    </main>
 </body>
-<button hx-post="/clicked" hx-swap="outerHTML">
-    Click Me
-</button>
+
 </html>
