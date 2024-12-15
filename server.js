@@ -3,7 +3,7 @@ import express from "express"
 const app = express()
 const port = 3000
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("public"))
+app.use(express.static("views"))
 
 app.post("/add-item", (req, res) => {
     const { item } = req.body
