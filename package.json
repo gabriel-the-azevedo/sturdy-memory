@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "test": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +20,5 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.9"
   }
 }
