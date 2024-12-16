@@ -3,11 +3,10 @@ import express from "express"
 const app = express()
 const port = 3000
 app.set('view engine', 'ejs');
-app.set('views', './views');
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (_, res) => {
-    res.render("index")
+    res.render("home")
 })
 
 app.post("/add-item", (req, res) => {
