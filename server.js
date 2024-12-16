@@ -2,15 +2,19 @@ import express from "express"
 
 const app = express()
 const port = 3000
+app.set('view engine', 'ejs');
+app.set('views', './views');
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("views"))
 
-app.post("/add-item", (req, res) => {
-    const { item } = req.body
-    res.send(`<li hx-delete="/delete-item" hx-swap="outerHTML">${item}</li>`)
+app.get("/", (_, res) => {
+    res.render("index")
 })
 
-app.delete("/delete-item", (_, res) => {
+app.post("/add-item", (req, res) => {
+    res.render("item", { item: req.body.item })
+})
+
+app.delete("/clean-delete", (_, res) => {
     res.status(200).send()
 })
 
